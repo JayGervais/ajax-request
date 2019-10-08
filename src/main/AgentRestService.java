@@ -13,10 +13,10 @@ import javax.ws.rs.DefaultValue;
 import javax.ws.rs.core.MediaType;
 
 
-@Path("/agents")
+@Path("/agent")
 public class AgentRestService 
 {
-	// http://JSPDay5/rs/agents/getallagents
+	// http://JSPDay5/rs/agent/getallagents
 	@GET
 	@Path("/getallagents")
     @Produces(MediaType.TEXT_PLAIN)
@@ -25,7 +25,7 @@ public class AgentRestService
         return "agents";	
 	}
 	
-	// http://JSPDay5/rs/agents/getagent
+	// http://JSPDay5/rs/agent/getagent/{agentid}
 	@GET
 	@Path("/getagent/{agentid}")
     @Produces(MediaType.APPLICATION_JSON)

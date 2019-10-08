@@ -3,6 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Travel Experts Agent List</title>
+<script src="jquery.js"></script>
 <script src="ajax.js"></script>
 </head>
 <body onload="loadagencies()">
@@ -10,12 +11,12 @@
 	Travel Agencies: 
 	<select id="agencies" onchange="loadagents(this.value)">
 		<option value="">Select an Agency</option>
-	</select><br>
+	</select><br />
 	
 	Agents from Agency:
 	<select id="agents" onchange="loadselectedagent(this.value)">
 		<option value="">Select an Agent</option>
-	</select><br>
+	</select><br />
 	
 	<div id="agent">Agent data here</div>
 	
